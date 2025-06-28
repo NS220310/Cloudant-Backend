@@ -20,7 +20,7 @@ except CloudantException:
 # Serve static HTML directly from current folder
 @app.route('/')
 def index():
-    return send_file("index.html")
+    return "Backend is running!"
 
 @app.route('/create', methods=['POST'])
 def create_record():
